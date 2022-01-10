@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600;700&display=swap");
+
+body {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+    padding: 10px 10px 50px 10px;
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    margin: 5px 10px;
+}
+
+h1 {
+    font-size: 160px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    margin: 3px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+hr {
+    width: 60%;
+}
+
+.subtitle {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section {
+    margin-top: 17vh;
+    text-align: center;
+}
+
+.light-text {
+    font-weight: 200;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    padding: 30px;
+}
+
+.options {
+    display: flex;
+}
+
+.options a {
+    margin: 40px 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.socials {
+    width: 100px;
+    height: 320px;
+    background-color: rgb(67, 174, 201);
+    border-radius: 30px 0 0 30px;
+    position: fixed;
+    right: 0;
+    top: 27vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .socials {
+        display: none;
+    }
+}
+
+.social {
+    width: 100%;
+    height: 33%;
+}
+
+.wave {
+    fill: rgb(96, 192, 128);
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.social svg {
+    fill: rgb(255, 255, 255);
+}
+
+a:hover {
+    color: rgb(255, 0, 166);
+}
+
+/*work page*/
+
+.work-details {
+    width: 50%;
+}
+
+.work-details td {
+    padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .work-details {
+        width: 80%;
+    }
+
+    .work-details td {
+        padding: 5px;
+    }
+}
+
+/*about me*/
+
+.about-me {
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.125rem;
+}
+
+.about-me img {
+    height: 20rem;
+    margin: 20px 10px 10px 10px;
+}
+.sub-pages-footer {
+    position: fixed;
+}
+
+@media only screen and (max-width: 600px) {
+    .sub-pages-footer {
+        position: relative;
+    }
+}
+
+/* contact page */
+.form-submit {
+    width: 50%;
+}
+
+.form-submit form {
+    width: 100%;
+}
+
+.form-submit .form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-row .form-control {
+    width: 50%;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 20px 0;
+}
+
+.form-row .form-control:focus,
+.form-submit textarea:focus {
+    outline: 0;
+    background-color: yellow;
+}
+
+.form-submit textarea {
+    font-family: "Josefin Sans", sans-serif;
+    width: 100%;
+    border: none;
+    padding: 0;
+    resize: none;
+    margin-top: 5px;
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+form button {
+    width: 100%;
+    background-color: rgb(79, 177, 79);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: "Oswald", sans-serif;
+    padding: 20px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-submit {
+        width: 80%;
+    }
+
+    .form-submit .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-row .form-control {
+        width: 100%;
+        margin-top: 5px;
+    }
+}
+
+.switch {
+    width: 80px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(39, 38, 38);
+    position: relative;
+}
+
+.flicker {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: 0.3s;
+    box-shadow: inset 4px 4px 4px rgb(255, 255, 255),
+        inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.dark {
+    background-color: rgb(255, 254, 254);
+    transition: 0.3s;
+}
+
+.dark .flicker {
+    transform: translateX(40px);
+}
+
+.dark > * {
+    color: rgb(255, 255, 255);
+}
+
+.dark li {
+    color: black;
+}
+
+.dark .hero-section {
+    color: rgb(0, 0, 0);
+}
+
+.dark .socials {
+    background-color: #e6643d;
+}
+
+.dark .wave {
+    fill: #4fbdba;
+}
+
+.dark li:hover {
+    color: #e6643d;
+}
+
+.dark a:hover {
+    color: #e6643d;
+}
+
+.dark .about-me {
+    color: black;
+}
+
+.dark footer {
+    color: black;
+}
+
+.dark h3 {
+    color: black;
+}
+
+.dark h3:hover {
+    color: #e6643d;
+}
+
+.dark td {
+    color: black;
+}
+
+.dark .subtitle {
+    color: black;
+}
+
+.skillcat {
+    font-size: 1.5rem;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.child {
+    margin: 4.5rem;
+}
+
+.dark .child {
+    color: black;
+}
+
+.dark .bullets {
+    color: black;
+}
+
+.bullets {
+    list-style: disc;
+    font-size: 1rem;
+}
+
+.position {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.redirect {
+    background-color: #4fbdba; /* Green */
+    border: none;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.redirect:hover {
+    background-color: #3a928f;
+}
+
+.dark .redirect {
+    background-color: #e6643d;
+}
+
+.dark .redirect:hover {
+    background-color: #ad4d30;
+}
+
+.btn-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.project- {
+    font-weight: 400;
+    font-size: 2rem;
+}
