@@ -105,7 +105,8 @@ a {
 
 @media only screen and (max-width: 600px) {
     .socials {
-        display: none;
+        width: 60px;
+        height: 200px;
     }
 }
 
