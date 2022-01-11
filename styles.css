@@ -138,6 +138,10 @@ a:hover {
     color: rgb(255, 0, 166);
 }
 
+li:hover {
+    color: rgb(255, 0, 166);
+}
+
 /*work page*/
 
 .work-details {
@@ -310,10 +314,6 @@ form button {
 }
 
 .dark li:hover {
-    color: #e6643d;
-}
-
-.dark a:hover {
     color: #e6643d;
 }
 
