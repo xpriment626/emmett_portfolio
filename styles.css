@@ -411,3 +411,8 @@ form button {
     font-weight: 400;
     font-size: 2rem;
 }
+
+.gsp-link {
+    text-decoration: underline;
+    font-weight: bold;
+}
