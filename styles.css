@@ -416,3 +416,32 @@ form button {
     text-decoration: underline;
     font-weight: bold;
 }
+
+.btm-btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.btm-btn {
+    background-color: #4fbdba; /* Green */
+    border: none;
+    color: white;
+    padding: 0.75rem;
+    margin: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btm-btn:hover {
+    background-color: #3a928f;
+}
+
+.dark .btm-btn {
+    background-color: #e6643d;
+}
+
+.dark .btm-btn:hover {
+    background-color: #ad4d30;
+}
